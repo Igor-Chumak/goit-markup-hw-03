@@ -45,10 +45,29 @@ body {
     background-color: var(--bg-color);
 }
 
+h1, h2, h3, h4, h5, p
+{
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
 /* -- Common for All Pages -- */
 
 .container {
-    width: 1128px;
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 1px dotted red;
 }
 
 .visually-hidden {
@@ -66,7 +85,8 @@ body {
 
 .list {
     list-style-type: none;
-    padding-left: 0;
+    /* padding-left: 0; */
+    padding: 0;
     margin: 0;
 }
 
@@ -117,11 +137,46 @@ body {
 
 /* Header & Footer */
 
-/* header{
-    border-bottom: 1px var(--brd-color);
+header {
+    border-bottom: 1px var(--brd-color) solid;
+}
+
+.header {
+    display: flex;
+    /* justify-content: space-between; */
+    /* padding: 24px calc(156px - 15px); */
+}
+
+.header-left {
+    display: flex;
+}
+
+.nav-site,
+.address-site {
+    display: flex;
+    outline: 1px solid blue;
+    gap: 40px;
+}
+
+/* .nav-site .link {
+    display: block;
+    padding: 24px 0;
 } */
 
+.nav-site li {
+    outline: 1px solid green;
+    background-color: yellow;
+    /* margin-right: 40px; */
+}
+
+.address-site li {
+    outline: 1px solid green;
+    background-color: magenta;
+    /* margin-right: 40px; */
+}
+
 .logo {
+    color: var(--color-logo);
     font-family: var(--font-secondary);
     font-size: 18px;
     font-weight: 800;
@@ -129,7 +184,6 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--color-logo);
 }
 
 .logo-part-header {
@@ -141,6 +195,9 @@ body {
 }
 
 .nav-link {
+    display: block;
+    padding: 24px 0;
+
     color: currentColor;
     font-size: inherit;
     font-weight: 500;
