@@ -143,39 +143,32 @@ header {
 
 .header {
     display: flex;
-    /* justify-content: space-between; */
-    /* padding: 24px calc(156px - 15px); */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 calc(156px - 15px);
 }
 
 .header-left {
     display: flex;
+    align-items: center;
+    /* gap: 76px; */
+    column-gap: 76px;
+    row-gap: 0;
+    flex-wrap: wrap;
 }
 
 .nav-site,
 .address-site {
     display: flex;
-    outline: 1px solid blue;
-    gap: 40px;
-}
-
-/* .nav-site .link {
-    display: block;
-    padding: 24px 0;
-} */
-
-.nav-site li {
-    outline: 1px solid green;
-    background-color: yellow;
-    /* margin-right: 40px; */
-}
-
-.address-site li {
-    outline: 1px solid green;
-    background-color: magenta;
-    /* margin-right: 40px; */
+    /* gap: 40px; */
+    column-gap: 40px;
+    row-gap: 0;
+    /* margin-left: auto; */
+    flex-wrap: wrap;
 }
 
 .logo {
+    padding: 24px 0;    
     color: var(--color-logo);
     font-family: var(--font-secondary);
     font-size: 18px;
@@ -210,6 +203,9 @@ header {
 }
 
 .contact-link {
+    display: block;
+    padding: 24px 0;
+
     color: var(--color-address);
     font-size: inherit;
     font-weight: inherit;
