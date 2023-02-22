@@ -315,12 +315,19 @@ header {
     gap: 24px;
 }
 
-.team li {
+.team-section li {
     background-color: var(--bg-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-content {
+    padding: 32px 16px;
 }
 
 .team-item {
-    margin: 32px auto 8px;
+    /* margin: 32px auto 8px; */
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: calc(24/20);
@@ -361,12 +368,14 @@ header {
 .portfolio-item {
     flex-basis: calc((1128px - 2*24px) / 3);
     /* flex-basis: 360px; */
+    border: 1px solid var(--brd-color);
 }
 
+.portfolio-item-content {
+    padding: 32px 16px;
+}
 
 .portfolio-item-title {
-    padding-left: 16px;
-    margin-top: 32px;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -377,7 +386,6 @@ header {
 }
 
 .portfolio-item-type {
-    padding-left: 16px;
     color: var(--color-secondary);
     letter-spacing: 0.02em;
     background-color: var(--bg-color);
