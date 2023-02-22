@@ -45,7 +45,7 @@ body {
     background-color: var(--bg-color);
 }
 
-h1, h2, h3, h4, h5, p
+h1, h2, h3, h4, h5, h6, p
 {
     margin: 0;
 }
@@ -101,6 +101,7 @@ img {
 }
 
 .button {
+    display: block;
     font-family: inherit;
     font-size: inherit;
     font-weight: 500;
@@ -110,6 +111,8 @@ img {
 }
 
 .btn-hero {
+    margin: 0 auto;
+    padding: 16px 32px;
     color: var(--color-btn-hero);
     background-color: var(--bg-color-btn-hero);
     border: 0px;
@@ -227,9 +230,13 @@ header {
 
 .hero-section {
     background-color: var(--bg-color-dark);
+    padding: 188px 0;
 }
 
 .hero-title {
+    width: 496px;
+    margin: 0 auto 48px;
+
     color: var(--color-hero-title);
     font-size: 56px;
     line-height: calc(60/56);
