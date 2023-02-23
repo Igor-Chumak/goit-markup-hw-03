@@ -149,27 +149,18 @@ header {
 .header {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 calc(156px - 15px);
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    /* gap: 76px; */
-    column-gap: 76px;
-    row-gap: 0;
-    flex-wrap: wrap;
+    gap: 76px;
 }
 
 .nav-site,
 .address-site {
     display: flex;
-    /* gap: 40px; */
-    column-gap: 40px;
-    row-gap: 0;
-    /* margin-left: auto; */
-    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .logo {
@@ -261,7 +252,6 @@ header {
 
 .features-flex {
     display: flex;
-    justify-content: space-between;
     gap: 24px;
 }
 
@@ -277,7 +267,7 @@ header {
 }
 
 .features-text {
-    padding-top: 8px;
+    margin-top: 8px;
     color: var(--color-secondary);
     letter-spacing: 0.02em;
 }
@@ -288,9 +278,13 @@ header {
 
 .whatwedo-flex {
     display: flex;
-    justify-content: space-between;
     gap: 24px;
 }
+
+.whatwedo-flex > li {
+    max-width: 360px;
+}
+
 
 .whatwedo-title,
 .team-title  {
